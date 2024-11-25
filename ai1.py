@@ -4,15 +4,11 @@ class FamilyTree:
             'A': {'father': 'B', 'mother': 'C', 'siblings': ['D'], 'children': ['E', 'F']},
             'D': {'father': 'B', 'mother': 'C', 'siblings': ['A'], 'children': ['G']},
             'E': {'father': 'A', 'mother': 'H', 'siblings': ['F'], 'children': []},
-            'F':
- {'father': 'A', 'mother': 'H', 'siblings': ['E'], 'children': []},
+            'F': {'father': 'A', 'mother': 'H', 'siblings': ['E'], 'children': []},
             'G': {'father': 'Info. not available', 'mother': 'D', 'siblings': [], 'children': []},
-            'B': {'father': 'Info. not available', 'mother': 'Info. not available', 'siblings': [], 'children': 
-['A', 'D']},
-            'C': {'father': 'Info. not available', 'mother': 'Info. not available', 'siblings': [], 'children': 
-['A', 'D']},
-            'H': {'father': 'Info. not available', 'mother': 'Info. not available', 'siblings': [], 'children': 
-['E', 'F']}
+            'B': {'father': 'Info. not available', 'mother': 'Info. not available', 'siblings': [], 'children': ['A', 'D']},
+            'C': {'father': 'Info. not available', 'mother': 'Info. not available', 'siblings': [], 'children': ['A', 'D']},
+            'H': {'father': 'Info. not available', 'mother': 'Info. not available', 'siblings': [], 'children': ['E', 'F']}
         }
     def find_relationship(self, name1, name2):
         if name1 not in self.family or name2 not in self.family:
